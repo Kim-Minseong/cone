@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/cone/static/js/main.c2ca365f.js",
+    "static/js/787.e7a2fea9.chunk.js": "/cone/static/js/787.e7a2fea9.chunk.js",
+    "index.html": "/cone/index.html",
+    "main.c2ca365f.js.map": "/cone/static/js/main.c2ca365f.js.map",
+    "787.e7a2fea9.chunk.js.map": "/cone/static/js/787.e7a2fea9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c2ca365f.js"
+  ]
+}
