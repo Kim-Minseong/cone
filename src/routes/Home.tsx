@@ -1,9 +1,17 @@
-import Coins from './Coins';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+    font-size: 32px;
+`;
+
+const Header = styled.header``;
+const CoinList = styled.ul``;
+const Coin = styled.li``;
 
 const Home = () => {
     return (
         <div>
-            <h1>I'm home</h1>
+            <Title>I'm home</Title>
         </div>
     );
 };
