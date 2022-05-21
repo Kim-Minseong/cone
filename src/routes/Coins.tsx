@@ -1,8 +1,13 @@
+import Header from '../components/Header';
+
 const Coins = () => {
     return (
-        <div>
-            <h1>Coins</h1>
-        </div>
+        <>
+            <Header></Header>
+            <div>
+                <h1>Coins</h1>
+            </div>
+        </>
     );
 };
 

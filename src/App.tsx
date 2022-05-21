@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Router from './Router';
 import { createGlobalStyle } from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -52,23 +52,42 @@ const GlobalStyle = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
-  * {
-    box-sizing: border-box;
+  
+  html {
+    scroll-behavior: smooth;
   }
   body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
     color: ${(props) => props.theme.textColor};
+
     
     
   }
   a {
     text-decoration:none;
+    color: inherit;
+    display: block;
   }
   `;
 
 function App() {
     return (
         <>
+            <Helmet>
+                <title>CONE</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link
+                    rel="preconnect"
+                    href="https://fonts.gstatic.com"
+                    crossOrigin="true"
+                />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400&family=Roboto:wght@100;300;400&display=swap"
+                    rel="stylesheet"
+                />
+                <script defer src="https://unpkg.com/scrollreveal"></script>
+            </Helmet>
             <GlobalStyle />
             <Router />
         </>
