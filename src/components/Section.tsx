@@ -28,15 +28,15 @@ const SectionStyled = styled.section`
             align-items: center;
             justify-content: center;
             /* padding-right: 11em; */
-            flex-wrap: nowrap;
             h3 {
+                flex-wrap: wrap;
                 font-size: 26px;
-                margin-bottom: 20px;
+                font-weight: bold;
+                margin-bottom: 40px;
                 text-align: center;
             }
             h4 {
                 font-size: 18px;
-                text-align: center;
             }
         }
     }
@@ -54,62 +54,52 @@ const SectionStyledRev = styled(SectionStyled)`
     }
 `;
 
-const Wrapper = styled.div`
-    padding: 5em;
-`;
-
 const Section = () => {
     return (
         <>
-            <Wrapper>
-                <SectionStyled>
-                    <img src={bitImg} alt="bit" />
-                    <div className="under-hero__content">
-                        <div>
-                            <h3>Although Bitcoin halving few token</h3>
-                            <h4>
-                                ether waited many protocol. Waves could be few
-                                quick fork during a bear, or blockchain could be
-                                few crypto-jacking at many private key because
-                                Tezos stacks a.
-                            </h4>
-                        </div>
+            <SectionStyled>
+                <img src={bitImg} alt="bit" />
+                <div className="under-hero__content">
+                    <div>
+                        <h3>Although Bitcoin halving few token</h3>
+                        <h4>
+                            ether waited many protocol. Waves could be few quick
+                            fork during a bear, or blockchain could be few
+                            crypto-jacking at many private key because Tezos
+                            stacks a.
+                        </h4>
                     </div>
-                </SectionStyled>
-                <SectionStyledRev>
-                    <img src={etherImg} alt="bit" />
-                    <div className="under-hero__content">
-                        <div>
-                            <h3>
-                                Ether forgot lots of validator at lots of fiat
-                            </h3>
-                            <h4>
-                                because they built some dormant moon, yet
-                                Ontology did many vaporware. Binance Coin formed
-                                few proof of authority of few REKT! Dash
-                                detected
-                            </h4>
-                        </div>
+                </div>
+            </SectionStyled>
+            <SectionStyledRev>
+                <img src={etherImg} alt="bit" />
+                <div className="under-hero__content">
+                    <div>
+                        <h3>Ether forgot lots of validator at lots of fiat</h3>
+                        <h4>
+                            because they built some dormant moon, yet Ontology
+                            did many vaporware. Binance Coin formed few proof of
+                            authority of few REKT! Dash detected
+                        </h4>
                     </div>
-                </SectionStyledRev>
-                <SectionStyled>
-                    <img src={blockChain} alt="bit" />
-                    <div className="under-hero__content">
-                        <div>
-                            <h3>
-                                Blockchain rejoins lots of dormant node during a
-                                hardware wallet.
-                            </h3>
-                            <h4>
-                                Maker slept on the trusted delegated
-                                proof-of-stake of a do your own research because
-                                Silk Road expected some private chain. When
-                                Lightning!
-                            </h4>
-                        </div>
+                </div>
+            </SectionStyledRev>
+            <SectionStyled>
+                <img src={blockChain} alt="bit" />
+                <div className="under-hero__content">
+                    <div>
+                        <h3>
+                            Blockchain rejoins lots of dormant node during a
+                            hardware wallet.
+                        </h3>
+                        <h4>
+                            Maker slept on the trusted delegated proof-of-stake
+                            of a do your own research because Silk Road expected
+                            some private chain. When Lightning!
+                        </h4>
                     </div>
-                </SectionStyled>
-            </Wrapper>
+                </div>
+            </SectionStyled>
         </>
     );
 };
