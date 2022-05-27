@@ -1,9 +1,9 @@
 import Header from '../components/Header';
 import styled from 'styled-components';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { ICoin } from '../coin';
+import { useQuery } from 'react-query';
+import { fetchCoins } from '../api';
 
 const Wrapper = styled.div`
     padding: 0 5em;
@@ -42,25 +42,16 @@ const Coin = styled.div`
 `;
 
 const Coins = () => {
-    const [coins, setCoins] = useState<ICoin[]>([]);
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        (async () => {
-            await axios
-                .get('https://api.coinpaprika.com/v1/coins')
-                .then((Response) => setCoins(Response.data.slice(0, 100)));
-            setLoading(false);
-        })();
-    }, []);
+    const { isLoading, data } = useQuery<ICoin[]>('allCoins', fetchCoins);
     return (
         <>
             <Wrapper>
                 <Header></Header>
-                {loading ? (
+                {isLoading ? (
                     'loading...'
                 ) : (
                     <CoinList>
-                        {coins.map((coin) => (
+                        {data?.slice(0, 200).map((coin) => (
                             <Link
                                 to={`/coins/${coin.id}`}
                                 key={coin.id}
