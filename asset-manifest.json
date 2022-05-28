@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/cone/static/js/main.d0d6d138.js",
+    "main.js": "/cone/static/js/main.6af18674.js",
     "static/js/787.e7a2fea9.chunk.js": "/cone/static/js/787.e7a2fea9.chunk.js",
     "static/media/bitcoin-3227945_640.png": "/cone/static/media/bitcoin-3227945_640.26b866cdd90ef42f40d5.png",
     "static/media/touch-screen-6091015_640.jpg": "/cone/static/media/touch-screen-6091015_640.502041a109568668fd18.jpg",
     "static/media/title.png": "/cone/static/media/title.437aa25d393fc39b70d7.png",
     "static/media/ethereum-6286124_640.jpg": "/cone/static/media/ethereum-6286124_640.30b3f581329c5742308a.jpg",
     "index.html": "/cone/index.html",
-    "main.d0d6d138.js.map": "/cone/static/js/main.d0d6d138.js.map",
+    "main.6af18674.js.map": "/cone/static/js/main.6af18674.js.map",
     "787.e7a2fea9.chunk.js.map": "/cone/static/js/787.e7a2fea9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d0d6d138.js"
+    "static/js/main.6af18674.js"
   ]
 }
