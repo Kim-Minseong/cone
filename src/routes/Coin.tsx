@@ -1,11 +1,9 @@
-import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '../components/Header';
-import axios from 'axios';
-import { ICoin } from '../coin';
 import styled from 'styled-components';
 import { useQuery } from 'react-query';
 import { fetchCoinInfo, fetchPriceInfo } from '../api';
+import Chart from '../components/Chart';
 
 interface ILocation {
     state: {
@@ -74,7 +72,7 @@ const Wrapper = styled.div`
 `;
 
 const CoinStyled = styled.div`
-    margin: 10em 0;
+    margin: 5em 0;
     display: flex;
     justify-content: center;
 `;
@@ -97,7 +95,8 @@ const Coin = () => {
         <>
             <Header></Header>
             <Wrapper>
-                <CoinStyled>{coinName}</CoinStyled>
+                <CoinStyled></CoinStyled>
+                <Chart></Chart>
             </Wrapper>
         </>
     );

@@ -6,6 +6,7 @@ import Section from '../components/Section';
 import Footer from '../components/Footer';
 import { useQuery } from 'react-query';
 import { fetchCoins } from '../api';
+import Loading from '../components/Loading';
 
 const Wrapper = styled.div`
     padding: 0 5em;
@@ -83,7 +84,7 @@ const Home = () => {
                     <Title>Coins</Title>
                 </CoinTitle>
                 {isLoading ? (
-                    'loading...'
+                    <Loading />
                 ) : (
                     <CoinList>
                         {data?.slice(0, 20).map((coin) => (

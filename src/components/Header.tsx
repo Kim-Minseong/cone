@@ -9,7 +9,6 @@ const HeaderStyled = styled.header`
     left: 0;
     z-index: 9;
     background-color: ${(props) => props.theme.bgColor};
-    /* background-color: rgba(0, 0, 0, 0.1); */
 `;
 
 const Nav = styled.nav`

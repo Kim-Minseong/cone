@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ICoin } from '../coin';
 import { useQuery } from 'react-query';
 import { fetchCoins } from '../api';
+import Loading from '../components/Loading';
 
 const Wrapper = styled.div`
     padding: 0 5em;
@@ -48,7 +49,7 @@ const Coins = () => {
             <Wrapper>
                 <Header></Header>
                 {isLoading ? (
-                    'loading...'
+                    <Loading />
                 ) : (
                     <CoinList>
                         {data?.slice(0, 200).map((coin) => (
